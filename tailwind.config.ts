@@ -9,14 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       borderRadius: {
-        lg: "var(--radius-lg)",
-        md: "var(--radius-md)",
-        sm: "var(--radius-sm)",
-        xl: "var(--radius-xl)",
+        lg: "12px",
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        sea: "#2E8B57",
+        gold: "#F2C14E",
+        sky: "#87B8D5",
+        charcoal: "#1C1C1C",
+        surface: "#2F2F2F",
+        text: "#F5F5F5",
+        muted: "#B0B0B0",
         card: {
           DEFAULT: "var(--card)",
           foreground: "var(--card-foreground)",
@@ -32,10 +36,6 @@ const config: Config = {
         secondary: {
           DEFAULT: "var(--secondary)",
           foreground: "var(--secondary-foreground)",
-        },
-        muted: {
-          DEFAULT: "var(--muted)",
-          foreground: "var(--muted-foreground)",
         },
         accent: {
           DEFAULT: "var(--accent)",
@@ -62,6 +62,38 @@ const config: Config = {
           border: "var(--sidebar-border)",
           ring: "var(--sidebar-ring)",
         },
+      },
+      boxShadow: {
+        glow: "0 0 0 2px rgba(46,139,87,.25), 0 6px 30px rgba(46,139,87,.35)",
+      },
+      keyframes: {
+        glow: {
+          "0%": { boxShadow: "0 0 0 0 rgba(46,139,87,.0)" },
+          "100%": { boxShadow: "0 0 0 12px rgba(46,139,87,.0)" },
+        },
+        sweep: {
+          "0%": { transform: "translateX(-120%)" },
+          "100%": { transform: "translateX(120%)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-4px)" },
+        },
+        underline: {
+          "0%": { width: "0" },
+          "100%": { width: "100%" },
+        },
+        shimmer: {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" },
+        },
+      },
+      animation: {
+        glow: "glow 2s ease-in-out infinite",
+        sweep: "sweep 1.2s ease-in-out",
+        float: "float 3s ease-in-out infinite",
+        underline: "underline 0.3s ease-out",
+        shimmer: "shimmer 2s linear infinite",
       },
     },
   },
