@@ -52,16 +52,36 @@ export default function Page() {
       <Separator />
 
       {/* Features */}
-      <section id="features" className="scroll-mt-24 py-20 mx-auto max-w-6xl px-4">
-        <div className="space-y-12">
-          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sea via-sky to-gold text-center">
-            Features
-          </h2>
-          <div className="grid gap-8 md:grid-cols-3">
-            <FeatureCard title="Pre-point routines" body="Lock in with consistent breath and cue words." imgSrc="/assets/feature-train.png" />
-            <FeatureCard title="In-match coaching" body="Real-time guidance for momentum swings and pressure moments." imgSrc="/assets/feature-track.png" />
-            <FeatureCard title="Post-match review" body="Reflect, tag patterns, and build confidence reps." imgSrc="/assets/feature-connect.png" />
-          </div>
+      <section id="features" className="scroll-mt-24 py-20 mx-auto max-w-6xl px-6 md:px-8">
+        <h2 className="text-2xl font-semibold">Features</h2>
+        <div className="grid gap-6 md:grid-cols-3">
+          <Card className="p-6 flex flex-col gap-3">
+            <div className="relative w-full h-36 md:h-40 flex items-center justify-center p-2">
+              <Image src="/assets/feature-train.png" alt="Guided Training" fill className="object-contain" sizes="(min-width: 768px) 33vw, 100vw" priority={false} />
+            </div>
+            <h3 className="font-semibold">Guided Training</h3>
+            <p className="text-sm text-muted-foreground">
+              Get personalized training plans, exercises, and mindset coaching.
+            </p>
+          </Card>
+          <Card className="p-6 flex flex-col gap-3">
+            <div className="relative w-full h-36 md:h-40 flex items-center justify-center p-2">
+              <Image src="/assets/feature-track.png" alt="Progress Tracking" fill className="object-contain" sizes="(min-width: 768px) 33vw, 100vw" priority={false} />
+            </div>
+            <h3 className="font-semibold">Progress Tracking</h3>
+            <p className="text-sm text-muted-foreground">
+              Track your progress, set goals, and see your improvement.
+            </p>
+          </Card>
+          <Card className="p-6 flex flex-col gap-3">
+            <div className="relative w-full h-36 md:h-40 flex items-center justify-center p-2">
+              <Image src="/assets/feature-connect.png" alt="Community" fill className="object-contain" sizes="(min-width: 768px) 33vw, 100vw" priority={false} />
+            </div>
+            <h3 className="font-semibold">Community</h3>
+            <p className="text-sm text-muted-foreground">
+              Connect with other players, share tips, and get support.
+            </p>
+          </Card>
         </div>
       </section>
 
