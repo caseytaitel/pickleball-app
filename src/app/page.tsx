@@ -22,11 +22,11 @@ export default function Page() {
               Focus, confidence, and clutch routines for pickleball players.
             </p>
             <div className="flex gap-4">
-              <Button size="lg" variant="brand" className="group relative overflow-hidden">
+              <Button size="lg" variant="brand" className="group relative overflow-hidden bg-sea text-white transition-all duration-300 hover:bg-gold hover:text-charcoal">
                 <span className="relative z-10">Join waitlist</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
               </Button>
-              <Button variant="outline" size="lg" className="border-sky/40 hover:bg-sky/10 text-white hover:border-sky/60">
+              <Button variant="outline" size="lg" className="border-sky/50 text-white transition-colors duration-300 hover:bg-sky/20 hover:border-sky/70 hover:text-sky">
                 See features
               </Button>
             </div>

@@ -17,7 +17,7 @@ export default function SiteHeader() {
   return (
     <header className="sticky top-0 backdrop-blur border-b border-white/10 z-50 w-full">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
-        <Link href="/" className="text-base font-semibold text-white hover:opacity-90">
+        <Link href="/" className="text-base font-semibold text-white transition-colors duration-300 hover:text-gold">
           pkkle
         </Link>
 
@@ -35,7 +35,7 @@ export default function SiteHeader() {
         </nav>
 
         <div className="hidden md:block">
-          <Button asChild variant="brand" className="relative overflow-hidden group">
+          <Button asChild variant="brand" className="relative overflow-hidden group bg-sea text-white transition-all duration-300 hover:bg-gold hover:text-charcoal">
             <Link href="#join">
               <span className="relative z-10">Join</span>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
