@@ -53,7 +53,13 @@ export default function Page() {
 
       {/* Features */}
       <section id="features" className="scroll-mt-24 py-20 mx-auto max-w-6xl px-6 md:px-8">
-        <h2 className="text-2xl font-semibold">Features</h2>
+        <div className="space-y-10 md:space-y-12">
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-sea via-sky to-gold text-center pb-2">
+            Features
+          </h2>
+          <div className="mt-2 grid gap-6 sm:gap-8 md:grid-cols-3">
+          </div>
+        </div>
         <div className="grid gap-6 md:grid-cols-3">
           <Card className="p-6 flex flex-col gap-3">
             <div className="relative w-full h-36 md:h-40 flex items-center justify-center p-2">
@@ -87,19 +93,19 @@ export default function Page() {
 
       {/* Science */}
       <section id="science" className="scroll-mt-24 py-20 mx-auto max-w-6xl px-4">
-        <div className="space-y-8">
-          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sea via-sky to-gold text-center">
+        <div className="space-y-10 md:space-y-12">
+          <h2 className="text-4xl md:text-5xl font-bold leading-snug md:leading-[1.25] pb-1 bg-clip-text text-transparent bg-gradient-to-r from-sea via-sky to-gold text text-center">
             Built on sport psychology
           </h2>
           <p className="text-muted text-center max-w-3xl mx-auto text-lg">Our methods blend attention control, imagery, and self-talk protocols validated across racket sports.</p>
           <div className="max-w-4xl mx-auto">
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="a1" className="bg-surface/80 border border-white/10 rounded-lg mb-4">
-                <AccordionTrigger className="text-white hover:text-sea transition-colors px-6 py-4">Attention control</AccordionTrigger>
+                <AccordionTrigger className="text-lg md:text-xl text-white hover:text-sea transition-colors px-6 py-4">Attention control</AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-muted">Brief copy on cues, breath, and focus resets.</AccordionContent>
               </AccordionItem>
               <AccordionItem value="a2" className="bg-surface/80 border border-white/10 rounded-lg">
-                <AccordionTrigger className="text-white hover:text-sea transition-colors px-6 py-4">Imagery + self-talk</AccordionTrigger>
+                <AccordionTrigger className="text-lg md:text-xl text-white hover:text-sea transition-colors px-6 py-4">Imagery + self-talk</AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-muted">Short evidence blurb and references.</AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -110,7 +116,7 @@ export default function Page() {
       {/* Join */}
       <section id="join" className="scroll-mt-24 py-20 mx-auto max-w-6xl px-4">
         <div className="space-y-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sea via-sky to-gold">
+          <h2 className="text-4xl md:text-5xl font-bold leading-[1.2] pb-1 bg-clip-text text-transparent bg-gradient-to-r from-sea via-sky to-gold text text-center">
             Get early access
           </h2>
           <div className="max-w-md mx-auto">
