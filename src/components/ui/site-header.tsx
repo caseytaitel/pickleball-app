@@ -26,15 +26,15 @@ export default function SiteHeader() {
             {links
               .filter((l) => l.label === "Features")
               .map((l) => (
-              <Link key={l.href} href={l.href} className="text-sm text-white/90 hover:text-white brand-underline focus:outline-none focus:ring-2 focus:ring-gold/60 rounded-sm">
+              <Link key={l.href} href={l.href} className="text-md text-white/90 hover:text-white brand-underline focus:outline-none focus:ring-2 focus:ring-gold/60 rounded-sm">
                 {l.label}
               </Link>
           ))}
           </nav>
           <Button
-            asChild
-            variant="brand"
-            className="relative overflow-hidden group bg-sea text-white transition-all duration-300 hover:bg-gold hover:text-charcoal"
+           asChild
+           variant="brand"
+           className="relative overflow-hidden group bg-sea text-white text-[0.95rem] md:text-lg transition-all duration-300 hover:bg-gold hover:text-charcoal"
           >
             <Link href="#join">
               <span className="relative z-10">Join</span>
